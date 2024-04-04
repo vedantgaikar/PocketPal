@@ -7,6 +7,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class LoginPage {
     public LoginPage() {
@@ -30,12 +32,14 @@ public class LoginPage {
         JLabel passwordLabel = new JLabel("Password:");
 
         // Create the signup button
-        JButton signupButton = new JButton("Login");
-        signupButton.setForeground(Color.WHITE);
-        signupButton.setBackground(new Color(0, 51, 153)); // Dark blue color
-        signupButton.setBorderPainted(false);
-        signupButton.setFocusPainted(false);
-        signupButton.setPreferredSize(new Dimension(120, 40)); // Button size
+        JButton loginButton = new JButton("Login");
+        loginButton.setFont(new Font("Roboto", Font.PLAIN, 14));
+        loginButton.setForeground(Color.WHITE);
+        loginButton.setBackground(new Color(0, 51, 153)); // Dark blue color
+        loginButton.setBorderPainted(false);
+        loginButton.setFocusPainted(false);
+        loginButton.setPreferredSize(new Dimension(120, 40)); // Button size
+
 
         // Add components to the panel
         GridBagConstraints gbc = new GridBagConstraints();
@@ -50,7 +54,7 @@ public class LoginPage {
         gbc.gridy++;
         panel.add(passwordField, gbc);
         gbc.gridy++;
-        panel.add(signupButton, gbc);
+        panel.add(loginButton, gbc);
 
         // Add logo image (ensure "logo.png" is in your project directory or provide the correct path)
         ImageIcon logoIcon = new ImageIcon("logo.png"); // Replace with your logo image
@@ -66,8 +70,22 @@ public class LoginPage {
         frame.add(panel, BorderLayout.CENTER); // Center for text fields and signup button
         frame.add(logoPanel, BorderLayout.EAST); // Right side for logo
 
+        // Add mouse listener for hover effect for signup
+        loginButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                loginButton.setBackground(Color.WHITE); // Change background color on hover
+                loginButton.setForeground(Color.BLUE); // Change text color on hover
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                loginButton.setBackground(new Color(0, 51, 153)); // Restore default background color
+                loginButton.setForeground(Color.WHITE); // Restore default text color
+            }
+        });
         // Action listener for signup button
-        signupButton.addActionListener(new ActionListener() {
+        loginButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Retrieve username and password from text fields
                 String username = usernameField.getText();
@@ -89,9 +107,12 @@ public class LoginPage {
         });
 
         frame.setVisible(true);
+        // Center the window on the screen
+        frame.setLocationRelativeTo(null);
     }
 
     public static void main(String[] args) {
+
         new LoginPage();
     }
     // Dummy method for validating user against a database
@@ -106,4 +127,5 @@ public class LoginPage {
             return null; // Username or password is incorrect
         }
     }
+
 }

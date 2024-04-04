@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b5b081a-73b0-4b43-b5cb-d7b5be3975b7" name="Changes" comment="">
+    <list default="true" id="1b5b081a-73b0-4b43-b5cb-d7b5be3975b7" name="Changes" comment="AddEntry Updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/AddNewEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AddNewEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/SignupPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SignupPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +29,9 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2eRknSVnqGClhrZuAi3vFDEA47P" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -53,6 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/admin/Downloads/ojdbc11.jar",
     "onboarding.tips.debug.path": "E:/Codes/Java Programs/test/src/Main.java",
@@ -96,6 +98,15 @@
       <option name="presentableId" value="Default" />
       <updated>1711874946650</updated>
     </task>
+    <task id="LOCAL-00001" summary="AddEntry Updated">
+      <option name="closed" value="true" />
+      <created>1711889447535</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711889447535</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -108,5 +119,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="AddEntry Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddEntry Updated" />
   </component>
 </project>

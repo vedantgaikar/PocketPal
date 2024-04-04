@@ -15,6 +15,8 @@ public class AddNewEntry extends JFrame {
                 try {
                     AddNewEntry frame = new AddNewEntry();
                     frame.setVisible(true);
+                    // Center the window on the screen
+                    frame.setLocationRelativeTo(null);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -128,12 +130,14 @@ public class AddNewEntry extends JFrame {
         contentPane.add(comboBoxPaymentMode);
 
         JButton btnSave = new JButton("Save");
+        btnSave.setBackground(new Color(0, 51, 153));
         btnSave.setFont(new Font("Dialog", Font.PLAIN, 14));
         btnSave.setBounds(157, 356, 89, 23);
         contentPane.add(btnSave);
 
         JButton btnClear = new JButton("Clear");
         btnClear.setFont(new Font("Dialog", Font.PLAIN, 14));
+        btnClear.setBackground(new Color(0, 51, 153));
         btnClear.setBounds(50, 356, 89, 23);
         contentPane.add(btnClear);
 
@@ -184,5 +188,6 @@ public class AddNewEntry extends JFrame {
                 System.exit(0);
             }
         });
+
     }
 }

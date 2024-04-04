@@ -4,6 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class MainPage {
     public static void main(String[] args) {
@@ -43,6 +45,23 @@ public class MainPage {
             }
         });
 
+        // Add mouse listener for hover effect for signup
+        loginButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                loginButton.setBackground(Color.WHITE); // Change background color on hover
+                loginButton.setForeground(Color.BLUE); // Change text color on hover
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                loginButton.setBackground(new Color(0, 51, 153)); // Restore default background color
+                loginButton.setForeground(Color.WHITE); // Restore default text color
+            }
+        });
+
+
+
         // Create the signup button with label
         JButton signupButton = new JButton("SIGNUP");
         signupButton.setForeground(Color.WHITE);
@@ -60,6 +79,22 @@ public class MainPage {
 
             }
         });
+        // Add mouse listener for hover effect for signup
+        signupButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                signupButton.setBackground(Color.WHITE); // Change background color on hover
+                signupButton.setForeground(Color.BLUE); // Change text color on hover
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                signupButton.setBackground(new Color(0, 51, 153)); // Restore default background color
+                signupButton.setForeground(Color.WHITE); // Restore default text color
+            }
+        });
+
+
 
         // Create the login label
         JLabel loginLabel = new JLabel("Already have an account?");
@@ -114,6 +149,9 @@ public class MainPage {
         frameConstraints.gridx = 1;
         frameConstraints.anchor = GridBagConstraints.CENTER;
         frame.getContentPane().add(logoPanel, frameConstraints);
+
+        // Center the window on the screen
+        frame.setLocationRelativeTo(null);
 
         frame.setVisible(true);
     }

@@ -23,12 +23,12 @@ public class SignupPage {
 
         // Create the title label
         JLabel titleLabel = new JLabel("Create New Account");
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 20)); // Decreased font size
+        titleLabel.setFont(new Font("Dialog", Font.BOLD, 20)); // Decreased font size
         titleLabel.setBounds(70, 10, 300, 40); // Adjusted position and size
 
         // Create the name label and field
         JLabel nameLabel = new JLabel("Name:");
-        nameLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+        nameLabel.setFont(new Font("Dialog", Font.PLAIN, 14));
         nameLabel.setBounds(40, 60, 100, 20);
         JTextField nameField = new JTextField();
         nameField.setBounds(140, 60, 200, 25);
@@ -36,7 +36,7 @@ public class SignupPage {
 
         // Create the email label and field
         JLabel emailLabel = new JLabel("Email:");
-        emailLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+        emailLabel.setFont(new Font("Dialog", Font.PLAIN, 14));
         emailLabel.setBounds(40, 100, 100, 20);
         JTextField emailField = new JTextField();
         emailField.setBounds(140, 100, 200, 25);
@@ -44,7 +44,7 @@ public class SignupPage {
 
         // Create the password label and field
         JLabel passwordLabel = new JLabel("Password:");
-        passwordLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+        passwordLabel.setFont(new Font("Dialog", Font.PLAIN, 14));
         passwordLabel.setBounds(40, 140, 100, 20);
         JPasswordField passwordField = new JPasswordField();
         passwordField.setBounds(140, 140, 200, 25);
@@ -58,7 +58,7 @@ public class SignupPage {
 
         // Create the login label
         JLabel loginLabel = new JLabel("Already Registered?");
-        loginLabel.setFont(new Font("Arial", Font.PLAIN, 14));
+        loginLabel.setFont(new Font("Dialog", Font.PLAIN, 14));
         loginLabel.setBounds(40, 220, 120, 20);
 
         // Create the login button
@@ -121,5 +121,8 @@ public class SignupPage {
         // Add the panel to the frame and make it visible
         frame.getContentPane().add(panel);
         frame.setVisible(true);
+
+        // Center the window on the screen
+        frame.setLocationRelativeTo(null);
     }
 }
