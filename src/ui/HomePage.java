@@ -110,7 +110,12 @@ public class HomePage {
             @Override
             public void actionPerformed(ActionEvent e) {
                 frame.dispose();
-                new Statistics();
+                try {
+                    Statistics frame = new Statistics(user);
+                    frame.setVisible(true);
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 

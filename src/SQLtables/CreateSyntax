@@ -15,3 +15,9 @@ Create TABLE entry_category (
     category_id INT PRIMARY KEY,
     name VARCHAR(25)
    );
+
+//Total pocket
+create TABLE pocket_money (
+          user_id INT REFERENCES users(user_id) UNIQUE,
+          amount number(6)
+);
