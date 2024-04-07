@@ -18,7 +18,7 @@ public class LoginPage {
         frame.setSize(400, 300); // Adjust the window size
         frame.getContentPane().setBackground(new Color(135, 206, 235)); // Sky blue color
 
-        // Create a panel for signup options
+        // Create a panel for login options
         JPanel panel = new JPanel();
         panel.setLayout(new GridBagLayout());
         panel.setOpaque(false); // Make the panel transparent
@@ -31,15 +31,14 @@ public class LoginPage {
         JLabel usernameLabel = new JLabel("Username:");
         JLabel passwordLabel = new JLabel("Password:");
 
-        // Create the signup button
+        // Create the login button
         JButton loginButton = new JButton("Login");
-        loginButton.setFont(new Font("Roboto", Font.PLAIN, 14));
+        loginButton.setFont(new Font("Arial", Font.PLAIN, 14));
         loginButton.setForeground(Color.WHITE);
         loginButton.setBackground(new Color(0, 51, 153)); // Dark blue color
         loginButton.setBorderPainted(false);
         loginButton.setFocusPainted(false);
         loginButton.setPreferredSize(new Dimension(120, 40)); // Button size
-
 
         // Add components to the panel
         GridBagConstraints gbc = new GridBagConstraints();
@@ -56,21 +55,11 @@ public class LoginPage {
         gbc.gridy++;
         panel.add(loginButton, gbc);
 
-        // Add logo image (ensure "logo.png" is in your project directory or provide the correct path)
-        ImageIcon logoIcon = new ImageIcon("logo.png"); // Replace with your logo image
-        JLabel logoLabel = new JLabel(logoIcon);
-
-        // Set up the logo panel
-        JPanel logoPanel = new JPanel();
-        logoPanel.add(logoLabel);
-        logoPanel.setOpaque(false); // Make the panel transparent
-
         // Set up the layout using BorderLayout
         frame.setLayout(new BorderLayout());
-        frame.add(panel, BorderLayout.CENTER); // Center for text fields and signup button
-        frame.add(logoPanel, BorderLayout.EAST); // Right side for logo
+        frame.add(panel, BorderLayout.CENTER); // Center for text fields and login button
 
-        // Add mouse listener for hover effect for signup
+        // Add mouse listener for hover effect for login button
         loginButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -84,7 +73,8 @@ public class LoginPage {
                 loginButton.setForeground(Color.WHITE); // Restore default text color
             }
         });
-        // Action listener for signup button
+
+        // Action listener for login button
         loginButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // Retrieve username and password from text fields
@@ -94,8 +84,8 @@ public class LoginPage {
                 // Validate username and password against the database
                 User isValid = validateUser(username, password);
 
-                if (isValid!=null) {
-                    // Successful signup
+                if (isValid != null) {
+                    // Successful login
                     JOptionPane.showMessageDialog(frame, "Login successful! Welcome, " + username + "!");
                     frame.dispose();
                     new HomePage(isValid);
@@ -112,9 +102,9 @@ public class LoginPage {
     }
 
     public static void main(String[] args) {
-
         new LoginPage();
     }
+
     // Dummy method for validating user against a database
     private static User validateUser(String username, String password) {
         // Query the database to check if a user with the provided username and password exists
@@ -127,5 +117,4 @@ public class LoginPage {
             return null; // Username or password is incorrect
         }
     }
-
 }

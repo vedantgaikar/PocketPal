@@ -1,0 +1,17 @@
+//Entry details
+CREATE TABLE entry_details (
+    entry_id INT PRIMARY KEY,
+    user_id INT references users(user_id),
+    entry_type VARCHAR(25),
+    entry_date DATE,
+    category VARCHAR(25),
+    amount NUMBER(4),
+    description VARCHAR(255),
+    payment_mode VARCHAR(25)
+);
+
+//Category details
+Create TABLE entry_category (
+    category_id INT PRIMARY KEY,
+    name VARCHAR(25)
+   );

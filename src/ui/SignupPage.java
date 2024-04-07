@@ -99,7 +99,7 @@ public class SignupPage {
                 DatabaseHandler.insertUser(user);
                 // Optionally, display a message or perform other actions upon successful signup
                 frame.dispose();
-                new MainPage(); // opens the HomePage
+                new LoginPage(); // opens the LoginPage
             }
         });
 

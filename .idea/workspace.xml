@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b5b081a-73b0-4b43-b5cb-d7b5be3975b7" name="Changes" comment="AddEntry Updated">
+    <list default="true" id="1b5b081a-73b0-4b43-b5cb-d7b5be3975b7" name="Changes" comment="Improved UI of LoginP, Signup&#10;&#10;Entry Details Added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/DatabaseHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/EntryDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/EntryDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Database/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Database/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/AddNewEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AddNewEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ui/SignupPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SignupPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +51,7 @@
     "Application.PocketPalLoginPage.executor": "Run",
     "Application.PocketPalSignupPage.executor": "Run",
     "Application.SignupPage.executor": "Run",
+    "Application.ViewPage.executor": "Run",
     "Application.loginPage.executor": "Run",
     "Application.signupPage.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -106,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711889447535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Improved UI of LoginP, Signup&#10;&#10;Entry Details Added">
+      <option name="closed" value="true" />
+      <created>1712214611696</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712214611696</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +134,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="AddEntry Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddEntry Updated" />
+    <MESSAGE value="Improved UI of LoginP, Signup&#10;&#10;Entry Details Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved UI of LoginP, Signup&#10;&#10;Entry Details Added" />
   </component>
 </project>
